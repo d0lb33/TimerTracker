@@ -1,0 +1,12 @@
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\TimerTrackerLoL.exe.config
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\TimerTrackerLoL.exe
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\TimerTrackerLoL.pdb
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\TimerTrackerLoL.xml
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.Resources.resources
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.vbproj.GenerateResource.Cache
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.exe
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.xml
+c:\users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.pdb
+C:\Users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.vbprojResolveAssemblyReference.cache
+C:\Users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.InGameTracker.resources
+C:\Users\jonat\documents\visual studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTrackerLoL.Main.resources

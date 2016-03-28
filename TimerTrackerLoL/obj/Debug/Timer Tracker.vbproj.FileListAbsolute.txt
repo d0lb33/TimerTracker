@@ -1,0 +1,12 @@
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\Timer Tracker.vbproj.GenerateResource.Cache
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\Timer Tracker.exe.config
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\Timer Tracker.exe
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\Timer Tracker.pdb
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\bin\Debug\Timer Tracker.xml
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTracker.InGameTracker.resources
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTracker.Main.resources
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\TimerTracker.Resources.resources
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\Timer Tracker.exe
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\Timer Tracker.xml
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\Timer Tracker.pdb
+C:\Users\jonat\Documents\Visual Studio 2015\Projects\TimerTrackerLoL\TimerTrackerLoL\obj\Debug\Timer Tracker.vbprojResolveAssemblyReference.cache

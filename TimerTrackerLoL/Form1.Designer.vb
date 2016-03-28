@@ -40,6 +40,7 @@ Partial Class InGameTracker
         Me.Summ4SpellCounter = New System.Windows.Forms.Timer(Me.components)
         Me.Summ5SpellCounter = New System.Windows.Forms.Timer(Me.components)
         Me.Summ6SpellCounter = New System.Windows.Forms.Timer(Me.components)
+        Me.Summ1SpellReadyCountdown = New System.Windows.Forms.Timer(Me.components)
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -169,6 +170,10 @@ Partial Class InGameTracker
         '
         Me.Summ6SpellCounter.Interval = 1000
         '
+        'Summ1SpellReadyCountdown
+        '
+        Me.Summ1SpellReadyCountdown.Interval = 1000
+        '
         'InGameTracker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -211,4 +216,5 @@ Partial Class InGameTracker
     Friend WithEvents Summ6SpellCounter As Timer
     Friend WithEvents SummSpell5 As Label
     Friend WithEvents SummSpell6 As Label
+    Friend WithEvents Summ1SpellReadyCountdown As Timer
 End Class

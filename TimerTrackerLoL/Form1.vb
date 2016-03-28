@@ -13,26 +13,38 @@ Public Class InGameTracker
     Dim Summ1InUse As Boolean
     Dim Summ1ChampName As String
     Dim Summ1Timer As Integer
+    Dim Summ1TimerReady As Integer = 15
+    Dim Summ1IsReady As Boolean
     Dim Summ2 As String
     Dim Summ2InUse As Boolean
     Dim Summ2ChampName As String
     Dim Summ2Timer As Integer
+    Dim Summ2TimerReady As Integer = 15
+    Dim Summ2IsReady As Boolean
     Dim Summ3 As String
     Dim Summ3InUse As Boolean
     Dim Summ3ChampName As String
     Dim Summ3Timer As Integer
+    Dim Summ3TimerReady As Integer = 15
+    Dim Summ3IsReady As Boolean
     Dim Summ4 As String
     Dim Summ4InUse As Boolean
     Dim Summ4ChampName As String
     Dim Summ4Timer As Integer
+    Dim Summ4TimerReady As Integer = 15
+    Dim Summ4IsReady As Boolean
     Dim Summ5 As String
     Dim Summ5InUse As Boolean
     Dim Summ5ChampName As String
     Dim Summ5Timer As Integer
+    Dim Summ5TimerReady As Integer = 15
+    Dim Summ5IsReady As Boolean
     Dim Summ6 As String
     Dim Summ6InUse As Boolean
     Dim Summ6ChampName As String
     Dim Summ6Timer As Integer
+    Dim Summ6TimerReady As Integer = 15
+    Dim Summ6IsReady As Boolean
 
 
     Private Sub Form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -902,78 +914,164 @@ Public Class InGameTracker
 
     Private Sub SummSpellCounter_Tick(sender As Object, e As EventArgs) Handles Summ1SpellCounter.Tick
         If Summ1InUse = True Then
-            Summ1Timer = Summ1Timer - 1
+            Summ1IsReady = False
+            Summ1TimerReady = 15
+
+            Summ1Timer = Summ1Timer - 100
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ1Timer)
             SummSpell1.Text = Summ1ChampName + Summ1 + ": " + stringTimer
             If Summ1Timer <= 0 Then
-                SummSpell1.Text = Summ1ChampName + Summ1 + " Is Ready"
+                Summ1IsReady = True
+
+                'SummSpell1.Text = Summ1ChampName + Summ1 + " Is Ready"
                 Summ1InUse = False
             End If
         End If
+
+        If Summ1IsReady = True Then
+            Summ1TimerReady = Summ1TimerReady - 1
+            SummSpell1.Text = Summ1ChampName + Summ1 + " Is Ready"
+            If Summ1TimerReady <= 0 Then
+                Summ1IsReady = 15
+                SummSpell1.Text = ""
+            End If
+
+        End If
+
     End Sub
 
     Private Sub Summ2SpellCounter_Tick(sender As Object, e As EventArgs) Handles Summ2SpellCounter.Tick
         If Summ2InUse = True Then
+            Summ2IsReady = False
+            Summ2TimerReady = 15
+
             Summ2Timer = Summ2Timer - 1
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ2Timer)
             SummSpell2.Text = Summ2ChampName + Summ2 + ": " + stringTimer
             If Summ2Timer <= 0 Then
-                SummSpell2.Text = Summ2ChampName + Summ2 + " Is Ready"
+                Summ2IsReady = True
+
+                'SummSpell2.Text = Summ2ChampName + Summ2 + " Is Ready"
                 Summ2InUse = False
+            End If
+
+            If Summ2IsReady = True Then
+                Summ2TimerReady = Summ2TimerReady - 1
+                SummSpell2.Text = Summ2ChampName + Summ2 + " Is Ready"
+                If Summ2TimerReady <= 0 Then
+                    Summ2IsReady = 15
+                    SummSpell1.Text = ""
+                End If
             End If
         End If
     End Sub
 
     Private Sub Summ3SpellCounter_Tick(sender As Object, e As EventArgs) Handles Summ3SpellCounter.Tick
         If Summ3InUse = True Then
+            Summ3IsReady = False
+            Summ3TimerReady = 15
+
             Summ3Timer = Summ3Timer - 1
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ3Timer)
             SummSpell3.Text = Summ3ChampName + Summ3 + " :  " + stringTimer
             If Summ3Timer <= 0 Then
-                SummSpell3.Text = Summ3ChampName + Summ3 + " Is Ready"
+                Summ3IsReady = True
+
+                'SummSpell3.Text = Summ3ChampName + Summ3 + " Is Ready"
                 Summ3InUse = False
+            End If
+        End If
+
+        If Summ3IsReady = True Then
+            Summ3TimerReady = Summ3TimerReady - 1
+            SummSpell3.Text = Summ3ChampName + Summ3 + " Is Ready"
+            If Summ3TimerReady <= 0 Then
+                Summ3IsReady = 15
+                SummSpell3.Text = ""
             End If
         End If
     End Sub
 
     Private Sub Summ4SpellCounter_Tick(sender As Object, e As EventArgs) Handles Summ4SpellCounter.Tick
         If Summ4InUse = True Then
+            Summ4IsReady = False
+            Summ4TimerReady = 15
+
             Summ4Timer = Summ4Timer - 1
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ4Timer)
             SummSpell4.Text = Summ4ChampName + Summ4 + " :  " + stringTimer
             If Summ4Timer <= 0 Then
-                SummSpell4.Text = Summ4ChampName + Summ4 + " Is Ready"
+                Summ4IsReady = True
+
+                'SummSpell4.Text = Summ4ChampName + Summ4 + " Is Ready"
                 Summ4InUse = False
+            End If
+        End If
+
+        If Summ4IsReady = True Then
+            Summ4TimerReady = Summ4TimerReady - 1
+            SummSpell4.Text = Summ4ChampName + Summ4 + " Is Ready"
+            If Summ4TimerReady <= 0 Then
+                Summ4IsReady = 15
+                SummSpell4.Text = ""
             End If
         End If
     End Sub
 
     Private Sub Summ5SpellCounter_Tick(sender As Object, e As EventArgs) Handles Summ5SpellCounter.Tick
         If Summ5InUse = True Then
+            Summ5IsReady = False
+            Summ5TimerReady = 15
+
             Summ5Timer = Summ5Timer - 1
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ5Timer)
             SummSpell5.Text = Summ5ChampName + Summ5 + " :  " + stringTimer
             If Summ5Timer <= 0 Then
-                SummSpell5.Text = Summ5ChampName + Summ5 + " Is Ready"
+                Summ5IsReady = True
+
+                ' SummSpell5.Text = Summ5ChampName + Summ5 + " Is Ready"
                 Summ5InUse = False
+            End If
+        End If
+
+        If Summ5IsReady = True Then
+            Summ5TimerReady = Summ5TimerReady - 1
+            SummSpell5.Text = Summ5ChampName + Summ5 + " Is Ready"
+            If Summ5TimerReady <= 0 Then
+                Summ5IsReady = 15
+                SummSpell5.Text = ""
             End If
         End If
     End Sub
 
     Private Sub Summ6SpellCounter_Tick(sender As Object, e As EventArgs) Handles Summ6SpellCounter.Tick
         If Summ6InUse = True Then
+            Summ6IsReady = False
+            Summ6TimerReady = 15
+
             Summ6Timer = Summ6Timer - 1
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ6Timer)
             SummSpell6.Text = Summ6ChampName + Summ6 + " :  " + stringTimer
             If Summ6Timer <= 0 Then
+                Summ6IsReady = True
+
                 SummSpell6.Text = Summ6ChampName + Summ6 + " Is Ready"
                 Summ6InUse = False
+            End If
+        End If
+
+        If Summ6IsReady = True Then
+            Summ6TimerReady = Summ6TimerReady - 1
+            SummSpell6.Text = Summ6ChampName + Summ6 + " Is Ready"
+            If Summ6TimerReady <= 0 Then
+                Summ6IsReady = 15
+                SummSpell6.Text = ""
             End If
         End If
     End Sub

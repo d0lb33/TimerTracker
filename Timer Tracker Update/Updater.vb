@@ -109,4 +109,8 @@ Public Class Updater
         Process.Start("Timer Tracker.exe")
         Me.Close()
     End Sub
+
+    Private Sub uptodate_Paint(sender As Object, e As PaintEventArgs) Handles uptodate.Paint
+
+    End Sub
 End Class

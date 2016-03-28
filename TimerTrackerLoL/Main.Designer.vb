@@ -209,7 +209,7 @@ Partial Class Main
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(48, 14)
         Me.Label8.TabIndex = 15
-        Me.Label8.Text = "V1.0.0.0"
+        Me.Label8.Text = "V1.0.0.1"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1

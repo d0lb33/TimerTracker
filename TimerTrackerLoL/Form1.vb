@@ -917,7 +917,7 @@ Public Class InGameTracker
             Summ1IsReady = False
             Summ1TimerReady = 15
 
-            Summ1Timer = Summ1Timer - 100
+            Summ1Timer = Summ1Timer - 1
             Dim stringTimer As String
             stringTimer = Convert.ToString(Summ1Timer)
             SummSpell1.Text = Summ1ChampName + Summ1 + ": " + stringTimer
